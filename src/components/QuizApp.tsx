@@ -5,14 +5,14 @@ import quizData from "../../public/pytania.json";
 
 
 interface Answear {
-  tekst: string;
-  prawidlowa: boolean;
+  text: string;
+  valid: boolean;
 }
 
 interface Question {
-  kategoria: string;
-  pytanie: string;
-  odpowiedzi: Answear[];
+  category: string;
+  question: string;
+  answears: Answear[];
 }
 
 type RevealState = "correct" | "wrong" | "missed";
@@ -41,12 +41,7 @@ const markerBase: CSSProperties = {
   flexShrink: 0,
 };
 
-function markerStyle(
-  index: number,
-  answered: boolean,
-  selected: number[],
-  revealMap: RevealMap
-): CSSProperties {
+function markerStyle(index: number, answered: boolean, selected: number[], revealMap: RevealMap): CSSProperties {
   if (!answered) {
     return selected.includes(index)
       ? { ...markerBase, background: "#0d6efd", border: "2px solid #0d6efd", color: "#fff" }
@@ -59,12 +54,7 @@ function markerStyle(
   return { ...markerBase, background: "#f8f9fa", border: "2px solid #dee2e6", color: "#6c757d" };
 }
 
-function markerLabel(
-  index: number,
-  answered: boolean,
-  selected: number[],
-  revealMap: RevealMap
-): string {
+function markerLabel(index: number, answered: boolean, selected: number[], revealMap: RevealMap): string {
   if (!answered) return selected.includes(index) ? "✓" : LABELS[index];
   const state = revealMap[index];
   if (state === "correct" || state === "missed") return "✓";
@@ -120,16 +110,16 @@ export default function QuizApp() {
   }, [init]);
 
   const q = questions[current];
-  const isMultiple: boolean = q?.pytanie?.toLowerCase().includes("wielokrotna") ?? false;
+  const isMultiple: boolean = q?.question?.toLowerCase().includes("wielokrotna") ?? false;
   const correctIndices: number[] =
-    q?.odpowiedzi.map((a, i) => (a.prawidlowa ? i : -1)).filter((i) => i !== -1) ?? [];
+    q?.answears.map((a, i) => (a.valid ? i : -1)).filter((i) => i !== -1) ?? [];
 
   function reveal(chosenSet: Set<number>, correct: boolean): void {
     const map: RevealMap = {};
-    q.odpowiedzi.forEach((a, i) => {
-      if (a.prawidlowa && chosenSet.has(i))       map[i] = "correct";
-      else if (!a.prawidlowa && chosenSet.has(i)) map[i] = "wrong";
-      else if (a.prawidlowa && !chosenSet.has(i)) map[i] = "missed";
+    q.answears.forEach((a, i) => {
+      if (a.valid && chosenSet.has(i))       map[i] = "correct";
+      else if (!a.valid && chosenSet.has(i)) map[i] = "wrong";
+      else if (a.valid && !chosenSet.has(i)) map[i] = "missed";
     });
     setRevealMap(map);
     setAnswered(true);
@@ -140,7 +130,7 @@ export default function QuizApp() {
 
   function handleSingle(i: number): void {
     if (answered) return;
-    reveal(new Set([i]), q.odpowiedzi[i].prawidlowa);
+    reveal(new Set([i]), q.answears[i].valid);
   }
 
   function handleMultiToggle(i: number): void {
@@ -229,15 +219,15 @@ export default function QuizApp() {
 
       {!finished ? (
         <>
-          {/* Licznik pytań + kategoria */}
+          {/* Licznik pytań + category */}
           <div className="d-flex align-items-center justify-content-between mb-2">
             <span className="text-muted small">Question {current + 1} z {questions.length} </span>
-            <span className="badge bg-primary-subtle text-primary">{q.kategoria}</span>
+            <span className="badge bg-primary-subtle text-primary">{q.category}</span>
           </div>
 
           {/* Treść pytania */}
           <p style={{ fontSize: "17px", fontWeight: 500, lineHeight: 1.6, marginBottom: "1rem" }}>
-            {q.pytanie}
+            {q.question}
           </p>
 
           {/* Podpowiedź dla wielokrotnej */}
@@ -248,7 +238,7 @@ export default function QuizApp() {
           )}
 
           <div className="d-flex flex-column gap-2 mb-3">
-            {q.odpowiedzi.map((ans, i) => (
+            {q.answears.map((ans, i) => (
               <button
                 key={i}
                 className={answerBtnClass(i, answered, selected, revealMap)}
@@ -260,7 +250,7 @@ export default function QuizApp() {
                 <span style={markerStyle(i, answered, selected, revealMap)}>
                   {markerLabel(i, answered, selected, revealMap)}
                 </span>
-                <span>{ans.tekst}</span>
+                <span>{ans.text}</span>
               </button>
             ))}
           </div>
@@ -283,7 +273,7 @@ export default function QuizApp() {
             >
               {feedback === "ok"
                 ? "✓ Poprawna odpowiedź!"
-                : `✗ Błędna odpowiedź. Poprawne: ${correctIndices.map((j) => q.odpowiedzi[j].tekst).join(", ")}.`}
+                : `✗ Błędna odpowiedź. Poprawne: ${correctIndices.map((j) => q.answears[j].text).join(", ")}.`}
             </div>
           )}
 
