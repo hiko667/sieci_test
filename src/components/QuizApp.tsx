@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { type CSSProperties } from "react";
 
-import quizData from "../../public/pytania.json";
+import quizData from "../pytania.json";
 
 
 interface Answear {
@@ -110,7 +110,14 @@ export default function QuizApp() {
   }, [init]);
 
   const q = questions[current];
-  const isMultiple: boolean = q?.question?.toLowerCase().includes("wielokrotna") ?? false;
+  let counter : number = 0;
+  for (let i = 0; i < 5; i++) {
+    if (q?.answears[i]?.valid === true || q?.question?.toLowerCase().includes("wielokrotna") || q?.question?.toLowerCase().includes("dwie")){
+    counter++;
+  }
+  }
+  const isMultiple: boolean = counter > 1;
+
   const correctIndices: number[] =
     q?.answears.map((a, i) => (a.valid ? i : -1)).filter((i) => i !== -1) ?? [];
 
