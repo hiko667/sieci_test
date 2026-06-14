@@ -1,642 +1,642 @@
 [
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Na jakiej częstotliwości pracuje standard 802.11a? (wielokrotna odpowiedź)",
-    "odpowiedzi": [
-      { "tekst": "2.4GHz", "prawidlowa": false },
-      { "tekst": "5GHz", "prawidlowa": true },
-      { "tekst": "6GHz", "prawidlowa": false },
-      { "tekst": "868MHz", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Na jakiej częstotliwości pracuje standard 802.11a? (wielokrotna odpowiedź)",
+    "answears": [
+      { "text": "2.4GHz", "valid": false },
+      { "text": "5GHz", "valid": true },
+      { "text": "6GHz", "valid": false },
+      { "text": "868MHz", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Na jakiej częstotliwości pracuje standard 802.11b? (wielokrotna odpowiedź)",
-    "odpowiedzi": [
-      { "tekst": "2.4GHz", "prawidlowa": true },
-      { "tekst": "5GHz", "prawidlowa": false },
-      { "tekst": "6GHz", "prawidlowa": false },
-      { "tekst": "868MHz", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Na jakiej częstotliwości pracuje standard 802.11b? (wielokrotna odpowiedź)",
+    "answears": [
+      { "text": "2.4GHz", "valid": true },
+      { "text": "5GHz", "valid": false },
+      { "text": "6GHz", "valid": false },
+      { "text": "868MHz", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Na jakiej częstotliwości pracuje standard 802.11n? (wielokrotna odpowiedź)",
-    "odpowiedzi": [
-      { "tekst": "2.4GHz", "prawidlowa": true },
-      { "tekst": "5GHz", "prawidlowa": true },
-      { "tekst": "6GHz", "prawidlowa": false },
-      { "tekst": "868MHz", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Na jakiej częstotliwości pracuje standard 802.11n? (wielokrotna odpowiedź)",
+    "answears": [
+      { "text": "2.4GHz", "valid": true },
+      { "text": "5GHz", "valid": true },
+      { "text": "6GHz", "valid": false },
+      { "text": "868MHz", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Jaki zakres kanałów jest dostępny w sieci 2.4GHz?",
-    "odpowiedzi": [
-      { "tekst": "1-10", "prawidlowa": false },
-      { "tekst": "5-15", "prawidlowa": false },
-      { "tekst": "1-14", "prawidlowa": true },
-      { "tekst": "6-17", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Jaki zakres kanałów jest dostępny w sieci 2.4GHz?",
+    "answears": [
+      { "text": "1-10", "valid": false },
+      { "text": "5-15", "valid": false },
+      { "text": "1-14", "valid": true },
+      { "text": "6-17", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Który z parametrów opisuje modulację FM?",
-    "odpowiedzi": [
-      { "tekst": "Dewiacja częstotliwości", "prawidlowa": true },
-      { "tekst": "Szerokość fali", "prawidlowa": false },
-      { "tekst": "Długość prążka", "prawidlowa": false },
-      { "tekst": "Głębokość modulacji", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Który z parametrów opisuje modulację FM?",
+    "answears": [
+      { "text": "Dewiacja częstotliwości", "valid": true },
+      { "text": "Szerokość fali", "valid": false },
+      { "text": "Długość prążka", "valid": false },
+      { "text": "Głębokość modulacji", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Który z parametrów opisuje modulację PWM?",
-    "odpowiedzi": [
-      { "tekst": "Dewiacja częstotliwości", "prawidlowa": false },
-      { "tekst": "Szerokość fali", "prawidlowa": true },
-      { "tekst": "Długość prążka", "prawidlowa": false },
-      { "tekst": "Głębokość modulacji", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Który z parametrów opisuje modulację PWM?",
+    "answears": [
+      { "text": "Dewiacja częstotliwości", "valid": false },
+      { "text": "Szerokość fali", "valid": true },
+      { "text": "Długość prążka", "valid": false },
+      { "text": "Głębokość modulacji", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Który z parametrów opisuje modulację AM?",
-    "odpowiedzi": [
-      { "tekst": "Dewiacja częstotliwości", "prawidlowa": false },
-      { "tekst": "Szerokość fali", "prawidlowa": false },
-      { "tekst": "Długość prążka", "prawidlowa": false },
-      { "tekst": "Głębokość modulacji", "prawidlowa": true }
+    "category": "Pasmo transmisyjne",
+    "question": "Który z parametrów opisuje modulację AM?",
+    "answears": [
+      { "text": "Dewiacja częstotliwości", "valid": false },
+      { "text": "Szerokość fali", "valid": false },
+      { "text": "Długość prążka", "valid": false },
+      { "text": "Głębokość modulacji", "valid": true }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Co to jest wstęga boczna (Sideband) w sygnale zmodulowanym AM?",
-    "odpowiedzi": [
-      { "tekst": "A. Składowa sygnału odpowiadająca samej nośnej", "prawidlowa": false },
-      { "tekst": "B. Dodatkowe składowe widmowe powstające po obu stronach nośnej wskutek modulacji", "prawidlowa": true },
-      { "tekst": "C. Sygnał pilot używany do synchronizacji odbiornika", "prawidlowa": false },
-      { "tekst": "D. Zakłócenie harmoniczne generowane przez wzmacniacz mocy", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Co to jest wstęga boczna (Sideband) w sygnale zmodulowanym AM?",
+    "answears": [
+      { "text": " Składowa sygnału odpowiadająca samej nośnej", "valid": false },
+      { "text": " Dodatkowe składowe widmowe powstające po obu stronach nośnej wskutek modulacji", "valid": true },
+      { "text": " Sygnał pilot używany do synchronizacji odbiornika", "valid": false },
+      { "text": " Zakłócenie harmoniczne generowane przez wzmacniacz mocy", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Co to jest ERP (Effective Radiated Power)?",
-    "odpowiedzi": [
-      { "tekst": "A. Efektywna moc wypromieniowana przez nadajnik podłączony do anteny izotropowej", "prawidlowa": false },
-      { "tekst": "B. Efektywna moc wypromieniowana przez nadajnik podłączony do anteny dipolowej", "prawidlowa": true },
-      { "tekst": "C. Moc tracona w kablu łączącym nadajnik z anteną", "prawidlowa": false },
-      { "tekst": "D. Maksymalna moc wejściowa dopuszczalna dla anteny", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Co to jest ERP (Effective Radiated Power)?",
+    "answears": [
+      { "text": " Efektywna moc wypromieniowana przez nadajnik podłączony do anteny izotropowej", "valid": false },
+      { "text": " Efektywna moc wypromieniowana przez nadajnik podłączony do anteny dipolowej", "valid": true },
+      { "text": " Moc tracona w kablu łączącym nadajnik z anteną", "valid": false },
+      { "text": " Maksymalna moc wejściowa dopuszczalna dla anteny", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Czym różni się EIRP od ERP?",
-    "odpowiedzi": [
-      { "tekst": "A. EIRP dotyczy anteny dipolowej, ERP dotyczy anteny izotropowej", "prawidlowa": false },
-      { "tekst": "B. EIRP = ERP dla anteny izotropowej (zamiast dipolowej)", "prawidlowa": true },
-      { "tekst": "C. EIRP jest zawsze mniejsze niż ERP o 2,15 dB", "prawidlowa": false },
-      { "tekst": "D. Nie ma różnicy - EIRP i ERP to synonimy", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Czym różni się EIRP od ERP?",
+    "answears": [
+      { "text": " EIRP dotyczy anteny dipolowej, ERP dotyczy anteny izotropowej", "valid": false },
+      { "text": " EIRP = ERP dla anteny izotropowej (zamiast dipolowej)", "valid": true },
+      { "text": " EIRP jest zawsze mniejsze niż ERP o 2,15 dB", "valid": false },
+      { "text": " Nie ma różnicy - EIRP i ERP to synonimy", "valid": false }
     ]
   },
   {
-    "kategoria": "Pasmo transmisyjne",
-    "pytanie": "Który standard IEEE wprowadził pasmo 6 GHz i technologię Wi-Fi 6E?",
-    "odpowiedzi": [
-      { "tekst": "A. 802.11ac", "prawidlowa": false },
-      { "tekst": "B. 802.11ax", "prawidlowa": true },
-      { "tekst": "C. 802.11be", "prawidlowa": false },
-      { "tekst": "D. 802.11b", "prawidlowa": false }
+    "category": "Pasmo transmisyjne",
+    "question": "Który standard IEEE wprowadził pasmo 6 GHz i technologię Wi-Fi 6E?",
+    "answears": [
+      { "text": " 802.11ac", "valid": false },
+      { "text": " 802.11ax", "valid": true },
+      { "text": " 802.11be", "valid": false },
+      { "text": " 802.11b", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Który standard bezpieczeństwa wprowadził mechanizm \"dragonfly handshake\"?",
-    "odpowiedzi": [
-      { "tekst": "WPA", "prawidlowa": false },
-      { "tekst": "WPA2", "prawidlowa": false },
-      { "tekst": "WPA3", "prawidlowa": true },
-      { "tekst": "WEP", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Który standard bezpieczeństwa wprowadził mechanizm \"dragonfly handshake\"?",
+    "answears": [
+      { "text": "WPA", "valid": false },
+      { "text": "WPA2", "valid": false },
+      { "text": "WPA3", "valid": true },
+      { "text": "WEP", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Który standard bezpieczeństwa pierwszy wprowadził tryby dwa tryby bezpieczeństwa (Personal oraz Enterprise)?",
-    "odpowiedzi": [
-      { "tekst": "WPA", "prawidlowa": true },
-      { "tekst": "WPA2", "prawidlowa": false },
-      { "tekst": "WPA3", "prawidlowa": false },
-      { "tekst": "WEP", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Który standard bezpieczeństwa pierwszy wprowadził tryby dwa tryby bezpieczeństwa (Personal oraz Enterprise)?",
+    "answears": [
+      { "text": "WPA", "valid": true },
+      { "text": "WPA2", "valid": false },
+      { "text": "WPA3", "valid": false },
+      { "text": "WEP", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Na jaką metodę szyfrowania zmieniono przechodząc ze standardu WPA do WPA2",
-    "odpowiedzi": [
-      { "tekst": "Z CCMP/RC4 na TKIP/AES", "prawidlowa": false },
-      { "tekst": "Z CCMP/AES na TKIP/RC4", "prawidlowa": false },
-      { "tekst": "Z TKIP/RC4 na CCMP/AES", "prawidlowa": true },
-      { "tekst": "Z TKIP/AES na CCMP/RC4", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Na jaką metodę szyfrowania zmieniono przechodząc ze standardu WPA do WPA2",
+    "answears": [
+      { "text": "Z CCMP/RC4 na TKIP/AES", "valid": false },
+      { "text": "Z CCMP/AES na TKIP/RC4", "valid": false },
+      { "text": "Z TKIP/RC4 na CCMP/AES", "valid": true },
+      { "text": "Z TKIP/AES na CCMP/RC4", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Który z rodzajów metod uwierzytelnienia EAP jest nieprawidłowy?",
-    "odpowiedzi": [
-      { "tekst": "EAP-TLS", "prawidlowa": false },
-      { "tekst": "EAP-CHAPv2", "prawidlowa": true },
-      { "tekst": "EAP-TTLS", "prawidlowa": false },
-      { "tekst": "EAP-IKEv2", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Który z rodzajów metod uwierzytelnienia EAP jest nieprawidłowy?",
+    "answears": [
+      { "text": "EAP-TLS", "valid": false },
+      { "text": "EAP-CHAPv2", "valid": true },
+      { "text": "EAP-TTLS", "valid": false },
+      { "text": "EAP-IKEv2", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Czym charakteryzują się symetryczne kryptosystemy:",
-    "odpowiedzi": [
-      { "tekst": "Wykorzystuje dwa różne klucze - publiczny do szyfrowania i prywatny do deszyfrowania", "prawidlowa": false },
-      { "tekst": "Nadawca i odbiorca używają zawsze różnych kluczy do komunikacji", "prawidlowa": false },
-      { "tekst": "Wykorzystuje jeden klucz do szyfrowania i deszyfrowania", "prawidlowa": true },
-      { "tekst": "Do zaszyfrowania wiadomości nie jest wymagany klucz", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Czym charakteryzują się symetryczne kryptosystemy:",
+    "answears": [
+      { "text": "Wykorzystuje dwa różne klucze - publiczny do szyfrowania i prywatny do deszyfrowania", "valid": false },
+      { "text": "Nadawca i odbiorca używają zawsze różnych kluczy do komunikacji", "valid": false },
+      { "text": "Wykorzystuje jeden klucz do szyfrowania i deszyfrowania", "valid": true },
+      { "text": "Do zaszyfrowania wiadomości nie jest wymagany klucz", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Czym charakteryzują się asymetryczne kryptosystemy:",
-    "odpowiedzi": [
-      { "tekst": "Wykorzystuje dwa różne klucze - publiczny do szyfrowania i prywatny do deszyfrowania", "prawidlowa": true },
-      { "tekst": "Nadawca i odbiorca używają zawsze różnych kluczy do komunikacji", "prawidlowa": false },
-      { "tekst": "Wykorzystuje jeden klucz do szyfrowania i deszyfrowania", "prawidlowa": false },
-      { "tekst": "Do zaszyfrowania wiadomości nie jest wymagany klucz", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Czym charakteryzują się asymetryczne kryptosystemy:",
+    "answears": [
+      { "text": "Wykorzystuje dwa różne klucze - publiczny do szyfrowania i prywatny do deszyfrowania", "valid": true },
+      { "text": "Nadawca i odbiorca używają zawsze różnych kluczy do komunikacji", "valid": false },
+      { "text": "Wykorzystuje jeden klucz do szyfrowania i deszyfrowania", "valid": false },
+      { "text": "Do zaszyfrowania wiadomości nie jest wymagany klucz", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Który z rodzajów algorytmów nie należy do grupy algorytmów symetrycznych?",
-    "odpowiedzi": [
-      { "tekst": "A. AES", "prawidlowa": false },
-      { "tekst": "B. DES", "prawidlowa": false },
-      { "tekst": "C. 3DES", "prawidlowa": false },
-      { "tekst": "D. RSA", "prawidlowa": true }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Który z rodzajów algorytmów nie należy do grupy algorytmów symetrycznych?",
+    "answears": [
+      { "text": " AES", "valid": false },
+      { "text": " DES", "valid": false },
+      { "text": " 3DES", "valid": false },
+      { "text": " RSA", "valid": true }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Który z rodzajów algorytmów nie należy do grupy algorytmów asymetrycznych?",
-    "odpowiedzi": [
-      { "tekst": "A. RSA", "prawidlowa": false },
-      { "tekst": "B. ECC", "prawidlowa": false },
-      { "tekst": "C. DSA", "prawidlowa": false },
-      { "tekst": "D. AES", "prawidlowa": true }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Który z rodzajów algorytmów nie należy do grupy algorytmów asymetrycznych?",
+    "answears": [
+      { "text": " RSA", "valid": false },
+      { "text": " ECC", "valid": false },
+      { "text": " DSA", "valid": false },
+      { "text": " AES", "valid": true }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "W jaki sposób w protokole WEP przebiega uwierzytelnianie?",
-    "odpowiedzi": [
-      { "tekst": "A. Za pomocą certyfikatów cyfrowych.", "prawidlowa": false },
-      { "tekst": "B. Za pomocą wspólnego klucza (Shared Key) lub uwierzytelniania otwartego (Open System).", "prawidlowa": true },
-      { "tekst": "C. Za pomocą serwera RADIUS i protokołu 802.1X.", "prawidlowa": false },
-      { "tekst": "D. Za pomocą kluczy publicznych i prywatnych.", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "W jaki sposób w protokole WEP przebiega uwierzytelnianie?",
+    "answears": [
+      { "text": " Za pomocą certyfikatów cyfrowych.", "valid": false },
+      { "text": " Za pomocą wspólnego klucza (Shared Key) lub uwierzytelniania otwartego (Open System).", "valid": true },
+      { "text": " Za pomocą serwera RADIUS i protokołu 802.1X.", "valid": false },
+      { "text": " Za pomocą kluczy publicznych i prywatnych.", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "W jaki sposób w protokole WPA2 przebiega uwierzytelnianie?",
-    "odpowiedzi": [
-      { "tekst": "A. Wyłącznie za pomocą klucza WEP.", "prawidlowa": false },
-      { "tekst": "B. Za pomocą uwierzytelniania Open System.", "prawidlowa": false },
-      { "tekst": "C. Za pomocą hasła PSK (Personal) lub serwera RADIUS/802.1X (Enterprise).", "prawidlowa": true },
-      { "tekst": "D. Za pomocą algorytmu DES.", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "W jaki sposób w protokole WPA2 przebiega uwierzytelnianie?",
+    "answears": [
+      { "text": " Wyłącznie za pomocą klucza WEP.", "valid": false },
+      { "text": " Za pomocą uwierzytelniania Open System.", "valid": false },
+      { "text": " Za pomocą hasła PSK (Personal) lub serwera RADIUS/802.1X (Enterprise).", "valid": true },
+      { "text": " Za pomocą algorytmu DES.", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Jaki algorytm szyfrowania stosujemy przy WPA2?",
-    "odpowiedzi": [
-      { "tekst": "DES", "prawidlowa": false },
-      { "tekst": "RC4", "prawidlowa": false },
-      { "tekst": "AES", "prawidlowa": true },
-      { "tekst": "RC5", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Jaki algorytm szyfrowania stosujemy przy WPA2?",
+    "answears": [
+      { "text": "DES", "valid": false },
+      { "text": "RC4", "valid": false },
+      { "text": "AES", "valid": true },
+      { "text": "RC5", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Jaki algorytm szyfrowania stosujemy przy WPA?",
-    "odpowiedzi": [
-      { "tekst": "DES", "prawidlowa": false },
-      { "tekst": "RC4", "prawidlowa": true },
-      { "tekst": "AES", "prawidlowa": false },
-      { "tekst": "RC5", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Jaki algorytm szyfrowania stosujemy przy WPA?",
+    "answears": [
+      { "text": "DES", "valid": false },
+      { "text": "RC4", "valid": true },
+      { "text": "AES", "valid": false },
+      { "text": "RC5", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Jaki algorytm szyfrowania stosujemy przy WPA3?",
-    "odpowiedzi": [
-      { "tekst": "DES", "prawidlowa": false },
-      { "tekst": "RC4", "prawidlowa": false },
-      { "tekst": "AES", "prawidlowa": true },
-      { "tekst": "RC5", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Jaki algorytm szyfrowania stosujemy przy WPA3?",
+    "answears": [
+      { "text": "DES", "valid": false },
+      { "text": "RC4", "valid": false },
+      { "text": "AES", "valid": true },
+      { "text": "RC5", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Jaki standard IEEE odpowiada za sieci bezprzewodowe?",
-    "odpowiedzi": [
-      { "tekst": "-802.1", "prawidlowa": false },
-      { "tekst": "802.3", "prawidlowa": false },
-      { "tekst": "802.11", "prawidlowa": true },
-      { "tekst": "-802.9", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Jaki standard IEEE odpowiada za sieci bezprzewodowe?",
+    "answears": [
+      { "text": "-802.1", "valid": false },
+      { "text": "802.3", "valid": false },
+      { "text": "802.11", "valid": true },
+      { "text": "-802.9", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Co to jest 802.1X?",
-    "odpowiedzi": [
-      { "tekst": "A. Standard szyfrowania symetrycznego dla sieci Wi-Fi", "prawidlowa": false },
-      { "tekst": "B. Zdefiniowany przez IEEE mechanizm kontroli dostępu do sieci, działający zarówno w sieciach przewodowych, jak i bezprzewodowych", "prawidlowa": true },
-      { "tekst": "C. Protokół routingu stosowany w sieciach WAN", "prawidlowa": false },
-      { "tekst": "D. Standard kompresji danych dla sieci Ethernet", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Co to jest 802.1X?",
+    "answears": [
+      { "text": " Standard szyfrowania symetrycznego dla sieci Wi-Fi", "valid": false },
+      { "text": " Zdefiniowany przez IEEE mechanizm kontroli dostępu do sieci, działający zarówno w sieciach przewodowych, jak i bezprzewodowych", "valid": true },
+      { "text": " Protokół routingu stosowany w sieciach WAN", "valid": false },
+      { "text": " Standard kompresji danych dla sieci Ethernet", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Jaką rolę pełni suplikant (supplicant) w procesie uwierzytelniania 802.1X?",
-    "odpowiedzi": [
-      { "tekst": "A. Jest serwerem AAA weryfikującym tożsamość użytkownika", "prawidlowa": false },
-      { "tekst": "B. Jest punktem dostępowym przekazującym pakiety EAP", "prawidlowa": false },
-      { "tekst": "C. Jest urządzeniem klienckim, które chce uzyskać dostęp do sieci i komunikuje się z serwerem uwierzytelniającym", "prawidlowa": true },
-      { "tekst": "D. Jest firewallem blokującym nieuprawniony ruch", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Jaką rolę pełni suplikant (supplicant) w procesie uwierzytelniania 802.1X?",
+    "answears": [
+      { "text": " Jest serwerem AAA weryfikującym tożsamość użytkownika", "valid": false },
+      { "text": " Jest punktem dostępowym przekazującym pakiety EAP", "valid": false },
+      { "text": " Jest urządzeniem klienckim, które chce uzyskać dostęp do sieci i komunikuje się z serwerem uwierzytelniającym", "valid": true },
+      { "text": " Jest firewallem blokującym nieuprawniony ruch", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Który z mechanizmów EAP jest uważany za najbezpieczniejszy?",
-    "odpowiedzi": [
-      { "tekst": "A. LEAP", "prawidlowa": false },
-      { "tekst": "B. EAP-MD5", "prawidlowa": false },
-      { "tekst": "C. EAP-TLS", "prawidlowa": true },
-      { "tekst": "D. CHAP", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Który z mechanizmów EAP jest uważany za najbezpieczniejszy?",
+    "answears": [
+      { "text": " LEAP", "valid": false },
+      { "text": " EAP-MD5", "valid": false },
+      { "text": " EAP-TLS", "valid": true },
+      { "text": " CHAP", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Przed jakim typem ataku bezpośrednio chroni protokół PMF (Protected Management Frames) obowiązkowy w WPA3?",
-    "odpowiedzi": [
-      { "tekst": "A. Atakami typu 'deauthentication' (odłączanie użytkowników)", "prawidlowa": true },
-      { "tekst": "B. Złamaniem hasła metodą brute-force offline", "prawidlowa": false },
-      { "tekst": "C. Podsłuchem danych w otwartej sieci Hotspot", "prawidlowa": false },
-      { "tekst": "D. Atakami typu SQL Injection", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Przed jakim typem ataku bezpośrednio chroni protokół PMF (Protected Management Frames) obowiązkowy w WPA3?",
+    "answears": [
+      { "text": " Atakami typu 'deauthentication' (odłączanie użytkowników)", "valid": true },
+      { "text": " Złamaniem hasła metodą brute-force offline", "valid": false },
+      { "text": " Podsłuchem danych w otwartej sieci Hotspot", "valid": false },
+      { "text": " Atakami typu SQL Injection", "valid": false }
     ]
   },
   {
-    "kategoria": "Bezpieczeństwo sieci",
-    "pytanie": "Jakie problemy rozwiązuje 802.1x? Wybierz dwie odpowiedzi",
-    "odpowiedzi": [
-      { "tekst": "a. problem złamania klucza poprzez częste zmiany klucza oraz stosowanie spersonalizowanych kluczy", "prawidlowa": true },
-      { "tekst": "b. problem multipleksacji poprzez wzrost pojemności łącza", "prawidlowa": false },
-      { "tekst": "c. problem niepowołanego dostępu poprzez uwierzytelnianie użytkowników i urządzeń", "prawidlowa": true },
-      { "tekst": "d. problem dywersyfikacji poprzez zmultiplikowanie torów transmisji", "prawidlowa": false }
+    "category": "Bezpieczeństwo sieci",
+    "question": "Jakie problemy rozwiązuje 802.1x? Wybierz dwie odpowiedzi",
+    "answears": [
+      { "text": " problem złamania klucza poprzez częste zmiany klucza oraz stosowanie spersonalizowanych kluczy", "valid": true },
+      { "text": " problem multipleksacji poprzez wzrost pojemności łącza", "valid": false },
+      { "text": " problem niepowołanego dostępu poprzez uwierzytelnianie użytkowników i urządzeń", "valid": true },
+      { "text": " problem dywersyfikacji poprzez zmultiplikowanie torów transmisji", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Który z opisów przedstawia zastosowanie technologii wielu anten w schemacie SIMO?",
-    "odpowiedzi": [
-      { "tekst": "Wykorzystuje jedną antenę odbiorczą i jedną antenę nadawczą", "prawidlowa": false },
-      { "tekst": "Wykorzystuje wiele anten odbiorczych i jedną antenę nadawczą", "prawidlowa": true },
-      { "tekst": "Wykorzystuje jedną antenę odbiorczą i wiele anten nadawczych", "prawidlowa": false },
-      { "tekst": "Wykorzystuje wiele anten nadawczych i wiele anten odbiorczych", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Który z opisów przedstawia zastosowanie technologii wielu anten w schemacie SIMO?",
+    "answears": [
+      { "text": "Wykorzystuje jedną antenę odbiorczą i jedną antenę nadawczą", "valid": false },
+      { "text": "Wykorzystuje wiele anten odbiorczych i jedną antenę nadawczą", "valid": true },
+      { "text": "Wykorzystuje jedną antenę odbiorczą i wiele anten nadawczych", "valid": false },
+      { "text": "Wykorzystuje wiele anten nadawczych i wiele anten odbiorczych", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Który z opisów przedstawia zastosowanie technologii wielu anten w schemacie MISO?",
-    "odpowiedzi": [
-      { "tekst": "Wykorzystuje jedną antenę odbiorczą i jedną antenę nadawczą", "prawidlowa": false },
-      { "tekst": "Wykorzystuje wiele anten odbiorczych i jedną antenę nadawczą", "prawidlowa": false },
-      { "tekst": "Wykorzystuje jedną antenę odbiorczą i wiele anten nadawczych", "prawidlowa": true },
-      { "tekst": "Wykorzystuje wiele anten nadawczych i wiele anten odbiorczych", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Który z opisów przedstawia zastosowanie technologii wielu anten w schemacie MISO?",
+    "answears": [
+      { "text": "Wykorzystuje jedną antenę odbiorczą i jedną antenę nadawczą", "valid": false },
+      { "text": "Wykorzystuje wiele anten odbiorczych i jedną antenę nadawczą", "valid": false },
+      { "text": "Wykorzystuje jedną antenę odbiorczą i wiele anten nadawczych", "valid": true },
+      { "text": "Wykorzystuje wiele anten nadawczych i wiele anten odbiorczych", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Który z opisów przedstawia zastosowanie technologii wielu anten w schemacie MIMO?",
-    "odpowiedzi": [
-      { "tekst": "Wykorzystuje jedną antenę odbiorczą i jedną antenę nadawczą", "prawidlowa": false },
-      { "tekst": "Wykorzystuje wiele anten odbiorczych i jedną antenę nadawczą", "prawidlowa": false },
-      { "tekst": "Wykorzystuje jedną antenę odbiorczą i wiele anten nadawczych", "prawidlowa": false },
-      { "tekst": "Wykorzystuje wiele anten nadawczych i wiele anten odbiorczych", "prawidlowa": true }
+    "category": "Inne parametry transmisyjne",
+    "question": "Który z opisów przedstawia zastosowanie technologii wielu anten w schemacie MIMO?",
+    "answears": [
+      { "text": "Wykorzystuje jedną antenę odbiorczą i jedną antenę nadawczą", "valid": false },
+      { "text": "Wykorzystuje wiele anten odbiorczych i jedną antenę nadawczą", "valid": false },
+      { "text": "Wykorzystuje jedną antenę odbiorczą i wiele anten nadawczych", "valid": false },
+      { "text": "Wykorzystuje wiele anten nadawczych i wiele anten odbiorczych", "valid": true }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Która z odpowiedzi najlepiej opisuje parametr \"beacon interval\":",
-    "odpowiedzi": [
-      { "tekst": "Maksymalna liczba urządzeń, które mogą jednocześnie połączyć się z punktem dostępowym", "prawidlowa": false },
-      { "tekst": "Minimalny poziom siły sygnału wymagany do nawiązania połączenia z siecią Wi-Fi", "prawidlowa": false },
-      { "tekst": "Czas pomiędzy kolejnymi sygnałami rozgłaszanymi przez router, informującymi urządzenia o swojej obecności w sieci", "prawidlowa": true },
-      { "tekst": "Czas potrzebny na przesłanie jednej ramki danych między routerem a urządzeniem klienckim", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Która z answears najlepiej opisuje parametr \"beacon interval\":",
+    "answears": [
+      { "text": "Maksymalna liczba urządzeń, które mogą jednocześnie połączyć się z punktem dostępowym", "valid": false },
+      { "text": "Minimalny poziom siły sygnału wymagany do nawiązania połączenia z siecią Wi-Fi", "valid": false },
+      { "text": "Czas pomiędzy kolejnymi sygnałami rozgłaszanymi przez router, informującymi urządzenia o swojej obecności w sieci", "valid": true },
+      { "text": "Czas potrzebny na przesłanie jednej ramki danych między routerem a urządzeniem klienckim", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Do czego służy zaawansowany aparat AP isolation?",
-    "odpowiedzi": [
-      { "tekst": "Ogranicza maksymalną przepustowość dostępną dla pojedynczego urządzenia w sieci", "prawidlowa": false },
-      { "tekst": "Umożliwia równoczesne korzystanie z wielu pasm częstotliwości (2,4 GHz i 5 GHz) przez jeden router", "prawidlowa": false },
-      { "tekst": "Izoluje urządzenia podłączone do tej samej sieci Wi-Fi od siebie nawzajem, uniemożliwiając im bezpośrednią komunikację", "prawidlowa": true },
-      { "tekst": "Zwiększa zasięg sieci Wi-Fi poprzez izolację punktów dostępowych", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Do czego służy zaawansowany aparat AP isolation?",
+    "answears": [
+      { "text": "Ogranicza maksymalną przepustowość dostępną dla pojedynczego urządzenia w sieci", "valid": false },
+      { "text": "Umożliwia równoczesne korzystanie z wielu pasm częstotliwości (2,4 GHz i 5 GHz) przez jeden router", "valid": false },
+      { "text": "Izoluje urządzenia podłączone do tej samej sieci Wi-Fi od siebie nawzajem, uniemożliwiając im bezpośrednią komunikację", "valid": true },
+      { "text": "Zwiększa zasięg sieci Wi-Fi poprzez izolację punktów dostępowych", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Do czego służy parametr RTS threshold?",
-    "odpowiedzi": [
-      { "tekst": "Określa maksymalny czas oczekiwania urządzenia na odpowiedź punktu dostępowego przed ponownym wysłaniem danych", "prawidlowa": false },
-      { "tekst": "Określa minimalny rozmiar pakietu, powyżej którego urządzenie przed wysłaniem danych najpierw wysyła ramkę sterującą, aby zarezerwować dostęp do medium transmisyjnego", "prawidlowa": true },
-      { "tekst": "Definiuje maksymalną liczbę jednoczesnych żądań połączenia obsługiwanych przez punkt dostępowy", "prawidlowa": false },
-      { "tekst": "Ustala minimalną siłę sygnału wymaganą do nawiązania połączenia między urządzeniem a routerem", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Do czego służy parametr RTS threshold?",
+    "answears": [
+      { "text": "Określa maksymalny czas oczekiwania urządzenia na odpowiedź punktu dostępowego przed ponownym wysłaniem danych", "valid": false },
+      { "text": "Określa minimalny rozmiar pakietu, powyżej którego urządzenie przed wysłaniem danych najpierw wysyła ramkę sterującą, aby zarezerwować dostęp do medium transmisyjnego", "valid": true },
+      { "text": "Definiuje maksymalną liczbę jednoczesnych żądań połączenia obsługiwanych przez punkt dostępowy", "valid": false },
+      { "text": "Ustala minimalną siłę sygnału wymaganą do nawiązania połączenia między urządzeniem a routerem", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Do czego służy parametr DTIM Interval?",
-    "odpowiedzi": [
-      { "tekst": "Określa co ile sygnałów beacon router informuje urządzenia będące w trybie oszczędzania energii o tym, kiedy mają się „wybudzić\"", "prawidlowa": true },
-      { "tekst": "Określa maksymalny czas bezczynności urządzenia, po którym router automatycznie rozłącza połączenie Wi-Fi", "prawidlowa": false },
-      { "tekst": "Ustala minimalny odstęp czasowy między kolejnymi żądaniami połączenia wysyłanymi przez urządzenia klienckie", "prawidlowa": false },
-      { "tekst": "Definiuje odstęp między kolejnymi skanowaniami dostępnych kanałów przez punkt dostępowy", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Do czego służy parametr DTIM Interval?",
+    "answears": [
+      { "text": "Określa co ile sygnałów beacon router informuje urządzenia będące w trybie oszczędzania energii o tym, kiedy mają się „wybudzić\"", "valid": true },
+      { "text": "Określa maksymalny czas bezczynności urządzenia, po którym router automatycznie rozłącza połączenie Wi-Fi", "valid": false },
+      { "text": "Ustala minimalny odstęp czasowy między kolejnymi żądaniami połączenia wysyłanymi przez urządzenia klienckie", "valid": false },
+      { "text": "Definiuje odstęp między kolejnymi skanowaniami dostępnych kanałów przez punkt dostępowy", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Do czego służy fragmentation threshold?",
-    "odpowiedzi": [
-      { "tekst": "A. Określa maksymalną liczbę użytkowników sieci Wi-Fi.", "prawidlowa": false },
-      { "tekst": "B. Określa próg wielkości pakietu, po przekroczeniu którego ramka jest dzielona na mniejsze fragmenty przed transmisją.", "prawidlowa": true },
-      { "tekst": "C. Służy do ustawiania siły sygnału punktu dostępowego.", "prawidlowa": false },
-      { "tekst": "D. Określa częstotliwość pracy sieci bezprzewodowej.", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Do czego służy fragmentation threshold?",
+    "answears": [
+      { "text": " Określa maksymalną liczbę użytkowników sieci Wi-Fi.", "valid": false },
+      { "text": " Określa próg wielkości pakietu, po przekroczeniu którego ramka jest dzielona na mniejsze fragmenty przed transmisją.", "valid": true },
+      { "text": " Służy do ustawiania siły sygnału punktu dostępowego.", "valid": false },
+      { "text": " Określa częstotliwość pracy sieci bezprzewodowej.", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Jakie są ramki sterujące? Wybierz dwie odpowiedzi",
-    "odpowiedzi": [
-      { "tekst": "Request to send", "prawidlowa": true },
-      { "tekst": "Acknowledgement", "prawidlowa": true },
-      { "tekst": "Beacon", "prawidlowa": false },
-      { "tekst": "Send all data", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Jakie są ramki sterujące? Wybierz dwie odpowiedzi",
+    "answears": [
+      { "text": "Request to send", "valid": true },
+      { "text": "Acknowledgement", "valid": true },
+      { "text": "Beacon", "valid": false },
+      { "text": "Send all data", "valid": false }
     ]
   },
   {
-    "kategoria": "Inne parametry transmisyjne",
-    "pytanie": "Co oznacza pojęcie MU-MIMO wprowadzone w standardzie 802.11ac Wave 2?",
-    "odpowiedzi": [
-      { "tekst": "A. Możliwość jednoczesnej transmisji danych przez punkt dostępowy do wielu użytkowników", "prawidlowa": true },
-      { "tekst": "B. Mechanizm automatycznej zmiany kanału nadawania", "prawidlowa": false },
-      { "tekst": "C. Szyfrowanie ramek sterujących na poziomie sprzętowym", "prawidlowa": false },
-      { "tekst": "D. Łączenie pasm 2.4 GHz oraz 5 GHz w celu zwiększenia prędkości", "prawidlowa": false }
+    "category": "Inne parametry transmisyjne",
+    "question": "Co oznacza pojęcie MU-MIMO wprowadzone w standardzie 802.11ac Wave 2?",
+    "answears": [
+      { "text": " Możliwość jednoczesnej transmisji danych przez punkt dostępowy do wielu użytkowników", "valid": true },
+      { "text": " Mechanizm automatycznej zmiany kanału nadawania", "valid": false },
+      { "text": " Szyfrowanie ramek sterujących na poziomie sprzętowym", "valid": false },
+      { "text": " Łączenie pasm 2.4 GHz oraz 5 GHz w celu zwiększenia prędkości", "valid": false }
     ]
   },
   {
-    "kategoria": "Anteny",
-    "pytanie": "Wybierz dwie odpowiedzi charakteryzujące anteny dipolową i izotropową",
-    "odpowiedzi": [
-      { "tekst": "A. Antena izotropowa jest anteną teoretyczną promieniującą jednakowo we wszystkich kierunkach.", "prawidlowa": true },
-      { "tekst": "B. Antena dipolowa jest rzeczywistą anteną o charakterystyce dookólnej w płaszczyźnie poziomej.", "prawidlowa": true },
-      { "tekst": "C. Antena izotropowa wymaga reflektora do prawidłowej pracy.", "prawidlowa": false },
-      { "tekst": "D. Antena dipolowa promieniuje jednakowo we wszystkich kierunkach przestrzeni.", "prawidlowa": false }
+    "category": "Anteny",
+    "question": "Wybierz dwie odpowiedzi charakteryzujące anteny dipolową i izotropową",
+    "answears": [
+      { "text": " Antena izotropowa jest anteną teoretyczną promieniującą jednakowo we wszystkich kierunkach.", "valid": true },
+      { "text": " Antena dipolowa jest rzeczywistą anteną o charakterystyce dookólnej w płaszczyźnie poziomej.", "valid": true },
+      { "text": " Antena izotropowa wymaga reflektora do prawidłowej pracy.", "valid": false },
+      { "text": " Antena dipolowa promieniuje jednakowo we wszystkich kierunkach przestrzeni.", "valid": false }
     ]
   },
   {
-    "kategoria": "Anteny",
-    "pytanie": "Wybierz dwie odpowiedzi charakteryzujące antenę kierunkową",
-    "odpowiedzi": [
-      { "tekst": "Kąt połowy mocy wynosi kilka-kilkanaście stopni", "prawidlowa": true },
-      { "tekst": "Zapewnia równomierne pokrycie sygnałem w płaszczyźnie poziomej.", "prawidlowa": false },
-      { "tekst": "Stosunek mocy w danym kierunku w stosunku do anteny izotropowej może wynosić do 30-40 dBi", "prawidlowa": true },
-      { "tekst": "Zysk energetyczny uzyskuje dzięki zwiększeniu mocy nadajnika.", "prawidlowa": false }
+    "category": "Anteny",
+    "question": "Wybierz dwie odpoweiedzi charakteryzujące antenę kierunkową",
+    "answears": [
+      { "text": "Kąt połowy mocy wynosi kilka-kilkanaście stopni", "valid": true },
+      { "text": "Zapewnia równomierne pokrycie sygnałem w płaszczyźnie poziomej.", "valid": false },
+      { "text": "Stosunek mocy w danym kierunku w stosunku do anteny izotropowej może wynosić do 30-40 dBi", "valid": true },
+      { "text": "Zysk energetyczny uzyskuje dzięki zwiększeniu mocy nadajnika.", "valid": false }
     ]
   },
   {
-    "kategoria": "Anteny",
-    "pytanie": "Wybierz wszystkie anteny zaliczające się do anten dookólnych",
-    "odpowiedzi": [
-      { "tekst": "Anteny prętowe", "prawidlowa": true },
-      { "tekst": "Anteny helikalne", "prawidlowa": false },
-      { "tekst": "Anteny dipolowe", "prawidlowa": true },
-      { "tekst": "Anteny reflektorowe", "prawidlowa": false }
+    "category": "Anteny",
+    "question": "Wybierz wszystkie anteny zaliczające się do anten dookólnych",
+    "answears": [
+      { "text": "Anteny prętowe", "valid": true },
+      { "text": "Anteny helikalne", "valid": false },
+      { "text": "Anteny dipolowe", "valid": true },
+      { "text": "Anteny reflektorowe", "valid": false }
     ]
   },
   {
-    "kategoria": "Anteny",
-    "pytanie": "Który z poniższych typów anten zalicza się do anten kierunkowych?",
-    "odpowiedzi": [
-      { "tekst": "A. Antena dipolowa", "prawidlowa": false },
-      { "tekst": "B. Antena prętowa", "prawidlowa": false },
-      { "tekst": "C. Antena paraboliczna", "prawidlowa": true },
-      { "tekst": "D. Antena szczelinowa", "prawidlowa": false }
+    "category": "Anteny",
+    "question": "Który z poniższych typów anten zalicza się do anten kierunkowych?",
+    "answears": [
+      { "text": " Antena dipolowa", "valid": false },
+      { "text": " Antena prętowa", "valid": false },
+      { "text": " Antena paraboliczna", "valid": true },
+      { "text": " Antena szczelinowa", "valid": false }
     ]
   },
   {
-    "kategoria": "Anteny",
-    "pytanie": "Co to jest zysk anteny (gain)?",
-    "odpowiedzi": [
-      { "tekst": "A. Stosunek mocy wejściowej do wyjściowej anteny", "prawidlowa": false },
-      { "tekst": "B. Stosunek gęstości mocy wypromieniowanej przez antenę w danym kierunku do gęstości mocy anteny wzorcowej", "prawidlowa": true },
-      { "tekst": "C. Stosunek szerokości pasma anteny do jej długości fizycznej", "prawidlowa": false },
-      { "tekst": "D. Miara tłumienia sygnału w kablu zasilającym antenę", "prawidlowa": false }
+    "category": "Anteny",
+    "question": "Co to jest zysk anteny (gain)?",
+    "answears": [
+      { "text": " Stosunek mocy wejściowej do wyjściowej anteny", "valid": false },
+      { "text": " Stosunek gęstości mocy wypromieniowanej przez antenę w danym kierunku do gęstości mocy anteny wzorcowej", "valid": true },
+      { "text": " Stosunek szerokości pasma anteny do jej długości fizycznej", "valid": false },
+      { "text": " Miara tłumienia sygnału w kablu zasilającym antenę", "valid": false }
     ]
   },
   {
-    "kategoria": "Anteny",
-    "pytanie": "Co oznacza skrót HPBW?",
-    "odpowiedzi": [
-      { "tekst": "A. High Power Bandwidth - szerokość pasma przy dużej mocy", "prawidlowa": false },
-      { "tekst": "B. Half Power Beam Width - kąt połowy mocy (szerokość wiązki głównej)", "prawidlowa": true },
-      { "tekst": "C. Horizontal Polarization Beam Width - szerokość wiązki poziomej", "prawidlowa": false },
-      { "tekst": "D. High Performance Broadband Wireless - standard szerokopasmowy", "prawidlowa": false }
+    "category": "Anteny",
+    "question": "Co oznacza skrót HPBW?",
+    "answears": [
+      { "text": " High Power Bandwidth - szerokość pasma przy dużej mocy", "valid": false },
+      { "text": " Half Power Beam Width - kąt połowy mocy (szerokość wiązki głównej)", "valid": true },
+      { "text": " Horizontal Polarization Beam Width - szerokość wiązki poziomej", "valid": false },
+      { "text": " High Performance Broadband Wireless - standard szerokopasmowy", "valid": false }
     ]
   },
   {
-    "kategoria": "Anteny",
-    "pytanie": "Jaka jest relacja między kątem połowy mocy a kierunkowością anteny?",
-    "odpowiedzi": [
-      { "tekst": "A. Im większy kąt połowy mocy, tym większa kierunkowość", "prawidlowa": false },
-      { "tekst": "B. Kąt połowy mocy nie ma związku z kierunkowością", "prawidlowa": false },
-      { "tekst": "C. Im mniejszy kąt połowy mocy, tym większa kierunkowość", "prawidlowa": true },
-      { "tekst": "D. Kierunkowość zależy wyłącznie od zysku energetycznego, nie od kąta", "prawidlowa": false }
+    "category": "Anteny",
+    "question": "Jaka jest relacja między kątem połowy mocy a kierunkowością anteny?",
+    "answears": [
+      { "text": " Im większy kąt połowy mocy, tym większa kierunkowość", "valid": false },
+      { "text": " Kąt połowy mocy nie ma związku z kierunkowością", "valid": false },
+      { "text": " Im mniejszy kąt połowy mocy, tym większa kierunkowość", "valid": true },
+      { "text": " Kierunkowość zależy wyłącznie od zysku energetycznego, nie od kąta", "valid": false }
     ]
   },
   {
-    "kategoria": "Anteny",
-    "pytanie": "Jak wpływa tłumienie kabla koncentrycznego (fidera) na ostateczną wartość EIRP systemu antenowego?",
-    "odpowiedzi": [
-      { "tekst": "A. Zwiększa wartość EIRP", "prawidlowa": false },
-      { "tekst": "B. Zmniejsza wartość EIRP o wartość strat w kablu wyrażoną w dB", "prawidlowa": true },
-      { "tekst": "C. Nie ma żadnego wpływu na EIRP", "prawidlowa": false },
-      { "tekst": "D. Zmienia charakterystykę promieniowania z dookólnej na kierunkową", "prawidlowa": false }
+    "category": "Anteny",
+    "question": "Jak wpływa tłumienie kabla koncentrycznego (fidera) na ostateczną wartość EIRP systemu antenowego?",
+    "answears": [
+      { "text": " Zwiększa wartość EIRP", "valid": false },
+      { "text": " Zmniejsza wartość EIRP o wartość strat w kablu wyrażoną w dB", "valid": true },
+      { "text": " Nie ma żadnego wpływu na EIRP", "valid": false },
+      { "text": " Zmienia charakterystykę promieniowania z dookólnej na kierunkową", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest ad-hoc?",
-    "odpowiedzi": [
-      { "tekst": "Sieć stworzona z użyciem punktu dostępowego", "prawidlowa": false },
-      { "tekst": "Sieć przewodowa bez sieci bezprzewodowej", "prawidlowa": false },
-      { "tekst": "Sieć przewodowa połączona z bezprzewodową", "prawidlowa": false },
-      { "tekst": "Sieć stworzona bez punktu dostępowego", "prawidlowa": true }
+    "category": "Bez kategorii",
+    "question": "Co to jest ad-hoc?",
+    "answears": [
+      { "text": "Sieć stworzona z użyciem punktu dostępowego", "valid": false },
+      { "text": "Sieć przewodowa bez sieci bezprzewodowej", "valid": false },
+      { "text": "Sieć przewodowa połączona z bezprzewodową", "valid": false },
+      { "text": "Sieć stworzona bez punktu dostępowego", "valid": true }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest tethering?",
-    "odpowiedzi": [
-      { "tekst": "A. Metoda zwiększania zasięgu sieci Wi-Fi poprzez dodatkowy punkt dostępowy", "prawidlowa": false },
-      { "tekst": "B. Odmiana topologii Ad-Hoc, w której smartfon lub tablet tworzy własny hotspot, udostępniając internet z sieci komórkowej", "prawidlowa": true },
-      { "tekst": "C. Protokół bezpiecznego tunelowania danych w sieci korporacyjnej", "prawidlowa": false },
-      { "tekst": "D. Technika kompresji danych stosowana w sieciach WLAN", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co to jest tethering?",
+    "answears": [
+      { "text": " Metoda zwiększania zasięgu sieci Wi-Fi poprzez dodatkowy punkt dostępowy", "valid": false },
+      { "text": " Odmiana topologii Ad-Hoc, w której smartfon lub tablet tworzy własny hotspot, udostępniając internet z sieci komórkowej", "valid": true },
+      { "text": " Protokół bezpiecznego tunelowania danych w sieci korporacyjnej", "valid": false },
+      { "text": " Technika kompresji danych stosowana w sieciach WLAN", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co jest prawdą w odniesieniu to fali elektromagnetycznej?",
-    "odpowiedzi": [
-      { "tekst": "Zmienne pole elektryczne wytwarza zmienne pole elektryczne", "prawidlowa": false },
-      { "tekst": "Zmienne pole elektryczne wytwarza zmienne pole magnetyczne", "prawidlowa": true },
-      { "tekst": "Zmienne pole magnetyczne wytwarza zmienne pole elektryczne", "prawidlowa": true },
-      { "tekst": "Zmienne pole magnetyczne wytwarza zmienne pole magnetyczne", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co jest prawdą w odniesieniu to fali elektromagnetycznej?",
+    "answears": [
+      { "text": "Zmienne pole elektryczne wytwarza zmienne pole elektryczne", "valid": false },
+      { "text": "Zmienne pole elektryczne wytwarza zmienne pole magnetyczne", "valid": true },
+      { "text": "Zmienne pole magnetyczne wytwarza zmienne pole elektryczne", "valid": true },
+      { "text": "Zmienne pole magnetyczne wytwarza zmienne pole magnetyczne", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest modulacja?",
-    "odpowiedzi": [
-      { "tekst": "Zmiana parametrów sygnału nośnego pod wpływem sygnału informacyjnego", "prawidlowa": true },
-      { "tekst": "Stałe utrzymanie amplitudy sygnału nośnego", "prawidlowa": false },
-      { "tekst": "Proces zamiany sygnału cyfrowego na analogowy bez zmiany parametrów", "prawidlowa": false },
-      { "tekst": "Wzmocnienie sygnału przez antenę nadawczą", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co to jest modulacja?",
+    "answears": [
+      { "text": "Zmiana parametrów sygnału nośnego pod wpływem sygnału informacyjnego", "valid": true },
+      { "text": "Stałe utrzymanie amplitudy sygnału nośnego", "valid": false },
+      { "text": "Proces zamiany sygnału cyfrowego na analogowy bez zmiany parametrów", "valid": false },
+      { "text": "Wzmocnienie sygnału przez antenę nadawczą", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Które parametry sygnału sinusoidalnego mogą być poddane modulacji?",
-    "odpowiedzi": [
-      { "tekst": "A. Tylko amplituda", "prawidlowa": false },
-      { "tekst": "B. Tylko częstotliwość", "prawidlowa": false },
-      { "tekst": "C. Amplituda, częstotliwość oraz faza", "prawidlowa": true },
-      { "tekst": "D. Amplituda i długość fali", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Które parametry sygnału sinusoidalnego mogą być poddane modulacji?",
+    "answears": [
+      { "text": " Tylko amplituda", "valid": false },
+      { "text": " Tylko częstotliwość", "valid": false },
+      { "text": " Amplituda, częstotliwość oraz faza", "valid": true },
+      { "text": " Amplituda i długość fali", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Czym jest QAM (Quadrature Amplitude Modulation)?",
-    "odpowiedzi": [
-      { "tekst": "A. Modulacją wyłącznie amplitudy sygnału nośnego", "prawidlowa": false },
-      { "tekst": "B. Połączeniem modulacji amplitudy i modulacji fazy", "prawidlowa": true },
-      { "tekst": "C. Modulacją częstotliwości stosowaną w radiodyfuzji", "prawidlowa": false },
-      { "tekst": "D. Techniką rozpraszania widma stosowaną w Bluetooth", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Czym jest QAM (Quadrature Amplitude Modulation)?",
+    "answears": [
+      { "text": " Modulacją wyłącznie amplitudy sygnału nośnego", "valid": false },
+      { "text": " Połączeniem modulacji amplitudy i modulacji fazy", "valid": true },
+      { "text": " Modulacją częstotliwości stosowaną w radiodyfuzji", "valid": false },
+      { "text": " Techniką rozpraszania widma stosowaną w Bluetooth", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Jak dane są przesyłane w modulacji QAM?",
-    "odpowiedzi": [
-      { "tekst": "A. W postaci pojedynczych bitów na jedną zmianę fazy", "prawidlowa": false },
-      { "tekst": "B. W postaci bloków wielobitowych (dwu-, cztero-, ośmio- itd.)", "prawidlowa": true },
-      { "tekst": "C. Wyłącznie w postaci bloków 8-bitowych", "prawidlowa": false },
-      { "tekst": "D. W postaci ciągłego sygnału analogowego bez kodowania blokowego", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Jak dane są przesyłane w modulacji QAM?",
+    "answears": [
+      { "text": " W postaci pojedynczych bitów na jedną zmianę fazy", "valid": false },
+      { "text": " W postaci bloków wielobitowych (dwu-, cztero-, ośmio- itd.)", "valid": true },
+      { "text": " Wyłącznie w postaci bloków 8-bitowych", "valid": false },
+      { "text": " W postaci ciągłego sygnału analogowego bez kodowania blokowego", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest QPSK?",
-    "odpowiedzi": [
-      { "tekst": "A. Quadrature Phase Shift Keying - kwadraturowe kluczowanie przesunięcia fazowego", "prawidlowa": true },
-      { "tekst": "B. Quadrature Pulse Shift Keying - impulsowe kluczowanie kwadraturowe", "prawidlowa": false },
-      { "tekst": "C. Quadrature Power Spread Keying - rozpraszanie mocy kwadraturowej", "prawidlowa": false },
-      { "tekst": "D. Quadrature Packet Spread Keying pakietowe rozpraszanie kwadraturowe", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co to jest QPSK?",
+    "answears": [
+      { "text": " Quadrature Phase Shift Keying - kwadraturowe kluczowanie przesunięcia fazowego", "valid": true },
+      { "text": " Quadrature Pulse Shift Keying - impulsowe kluczowanie kwadraturowe", "valid": false },
+      { "text": " Quadrature Power Spread Keying - rozpraszanie mocy kwadraturowej", "valid": false },
+      { "text": " Quadrature Packet Spread Keying pakietowe rozpraszanie kwadraturowe", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Ile wartości (przesunięć fazowych) wykorzystuje QPSK?",
-    "odpowiedzi": [
-      { "tekst": "A. 2", "prawidlowa": false },
-      { "tekst": "B. 4", "prawidlowa": true },
-      { "tekst": "C. 8", "prawidlowa": false },
-      { "tekst": "D. 16", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Ile wartości (przesunięć fazowych) wykorzystuje QPSK?",
+    "answears": [
+      { "text": " 2", "valid": false },
+      { "text": " 4", "valid": true },
+      { "text": " 8", "valid": false },
+      { "text": " 16", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest DSSS (Direct Sequence Spread Spectrum)?",
-    "odpowiedzi": [
-      { "tekst": "A. Metoda skakania po częstotliwościach w określonych interwałach", "prawidlowa": false },
-      { "tekst": "B. Metoda kluczowania bezpośredniego - modulowanie sekwencją bitową zwaną pseudo-szumem", "prawidlowa": true },
-      { "tekst": "C. Metoda przemiatania częstotliwości w czasie", "prawidlowa": false },
-      { "tekst": "D. Metoda multipleksowania z podziałem na kody", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co to jest DSSS (Direct Sequence Spread Spectrum)?",
+    "answears": [
+      { "text": " Metoda skakania po częstotliwościach w określonych interwałach", "valid": false },
+      { "text": " Metoda kluczowania bezpośredniego - modulowanie sekwencją bitową zwaną pseudo-szumem", "valid": true },
+      { "text": " Metoda przemiatania częstotliwości w czasie", "valid": false },
+      { "text": " Metoda multipleksowania z podziałem na kody", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest FHSS (Frequency Hopping Spread Spectrum)?",
-    "odpowiedzi": [
-      { "tekst": "A. Metoda, w której nadajnik i odbiornik zmieniają w określonych cyklach częstotliwość fali nośnej", "prawidlowa": true },
-      { "tekst": "B. Metoda bezpośredniego rozpraszania widma przy użyciu pseudo-szumu", "prawidlowa": false },
-      { "tekst": "C. Metoda przemiatania amplitudy sygnału", "prawidlowa": false },
-      { "tekst": "D. Metoda rozpraszania czasu transmisji", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co to jest FHSS (Frequency Hopping Spread Spectrum)?",
+    "answears": [
+      { "text": " Metoda, w której nadajnik i odbiornik zmieniają w określonych cyklach częstotliwość fali nośnej", "valid": true },
+      { "text": " Metoda bezpośredniego rozpraszania widma przy użyciu pseudo-szumu", "valid": false },
+      { "text": " Metoda przemiatania amplitudy sygnału", "valid": false },
+      { "text": " Metoda rozpraszania czasu transmisji", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Ile różnych częstotliwości nośnych przewiduje standard IEEE 802.11 dla FHSS?",
-    "odpowiedzi": [
-      { "tekst": "A. Do 26 niepokrywających się pasm", "prawidlowa": false },
-      { "tekst": "B. Do 50 niepokrywających się pasm", "prawidlowa": false },
-      { "tekst": "C. Do 79 niepokrywających się pasm częstotliwości, każde o szerokości 1 MHz", "prawidlowa": true },
-      { "tekst": "D. Do 100 niepokrywających się pasm", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Ile różnych częstotliwości nośnych przewiduje standard IEEE 802.11 dla FHSS?",
+    "answears": [
+      { "text": " Do 26 niepokrywających się pasm", "valid": false },
+      { "text": " Do 50 niepokrywających się pasm", "valid": false },
+      { "text": " Do 79 niepokrywających się pasm częstotliwości, każde o szerokości 1 MHz", "valid": true },
+      { "text": " Do 100 niepokrywających się pasm", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest SNR (Signal to Noise Ratio)?",
-    "odpowiedzi": [
-      { "tekst": "A. Stosunek szerokości pasma do częstotliwości nośnej", "prawidlowa": false },
-      { "tekst": "B. Stosunek mocy sygnału do mocy szumu", "prawidlowa": true },
-      { "tekst": "C. Stosunek amplitudy sygnału modulującego do amplitudy nośnej", "prawidlowa": false },
-      { "tekst": "D. Stosunek liczby bitów błędnych do całkowitej liczby bitów", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co to jest SNR (Signal to Noise Ratio)?",
+    "answears": [
+      { "text": " Stosunek szerokości pasma do częstotliwości nośnej", "valid": false },
+      { "text": " Stosunek mocy sygnału do mocy szumu", "valid": true },
+      { "text": " Stosunek amplitudy sygnału modulującego do amplitudy nośnej", "valid": false },
+      { "text": " Stosunek liczby bitów błędnych do całkowitej liczby bitów", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Jaką metodę dostępu do medium stosuje standard 802.11 (WLAN)?",
-    "odpowiedzi": [
-      { "tekst": "A. CSMA/CD - wykrywanie kolizji", "prawidlowa": false },
-      { "tekst": "B. CSMA/CA - unikanie kolizji", "prawidlowa": true },
-      { "tekst": "C. Token Ring - przekazywanie żetonu", "prawidlowa": false },
-      { "tekst": "D. TDMA - wielodostęp z podziałem czasu", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Jaką metodę dostępu do medium stosuje standard 802.11 (WLAN)?",
+    "answears": [
+      { "text": " CSMA/CD - wykrywanie kolizji", "valid": false },
+      { "text": " CSMA/CA - unikanie kolizji", "valid": true },
+      { "text": " Token Ring - przekazywanie żetonu", "valid": false },
+      { "text": " TDMA - wielodostęp z podziałem czasu", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest BSS (Basic Service Set)?",
-    "odpowiedzi": [
-      { "tekst": "A. Tryb pracy sieci bezprzewodowej wykorzystujący dwa lub więcej punktów dostępowych", "prawidlowa": false },
-      { "tekst": "B. Tryb pracy sieci bezprzewodowej wykorzystujący jeden punkt dostępowy z topologią infrastruktury", "prawidlowa": true },
-      { "tekst": "C. Sieć bezprzewodowa bez żadnego punktu dostępowego", "prawidlowa": false },
-      { "tekst": "D. Standard szyfrowania stosowany w sieciach WPA3", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co to jest BSS (Basic Service Set)?",
+    "answears": [
+      { "text": " Tryb pracy sieci bezprzewodowej wykorzystujący dwa lub więcej punktów dostępowych", "valid": false },
+      { "text": " Tryb pracy sieci bezprzewodowej wykorzystujący jeden punkt dostępowy z topologią infrastruktury", "valid": true },
+      { "text": " Sieć bezprzewodowa bez żadnego punktu dostępowego", "valid": false },
+      { "text": " Standard szyfrowania stosowany w sieciach WPA3", "valid": false }
     ]
   },
   {
-    "kategoria": "Bez kategorii",
-    "pytanie": "Co to jest ESS (Extended Service Set)?",
-    "odpowiedzi": [
-      { "tekst": "A. Tryb pracy sieci bezprzewodowej z jednym punktem dostepowym", "prawidlowa": false },
-      { "tekst": "B. Tryb pracy sieci bezprzewodowej z dwoma lub więcej punktami dostępowymi (infrastruktura)", "prawidlowa": true },
-      { "tekst": "C. Sieć peer-to-peer bez punktu dostępowego", "prawidlowa": false },
-      { "tekst": "D. Rozszerzona sieć przewodowa z mostkiem bezprzewodowym", "prawidlowa": false }
+    "category": "Bez kategorii",
+    "question": "Co to jest ESS (Extended Service Set)?",
+    "answears": [
+      { "text": " Tryb pracy sieci bezprzewodowej z jednym punktem dostepowym", "valid": false },
+      { "text": " Tryb pracy sieci bezprzewodowej z dwoma lub więcej punktami dostępowymi (infrastruktura)", "valid": true },
+      { "text": " Sieć peer-to-peer bez punktu dostępowego", "valid": false },
+      { "text": " Rozszerzona sieć przewodowa z mostkiem bezprzewodowym", "valid": false }
     ]
   }
 ]
