@@ -1,27 +1,24 @@
 import { useState, useEffect, useCallback } from "react";
 import { type CSSProperties } from "react";
 
-// Podmień na właściwą ścieżkę do pliku JSON
 import quizData from "../../public/pytania.json";
 
-// ─── Typy ────────────────────────────────────────────────────────────────────
 
-interface Odpowiedz {
+interface Answear {
   tekst: string;
   prawidlowa: boolean;
 }
 
-interface Pytanie {
+interface Question {
   kategoria: string;
   pytanie: string;
-  odpowiedzi: Odpowiedz[];
+  odpowiedzi: Answear[];
 }
 
 type RevealState = "correct" | "wrong" | "missed";
 type RevealMap = Record<number, RevealState>;
 type Feedback = "ok" | "fail" | null;
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function shuffle<T>(arr: T[]): T[] {
   return arr.slice().sort(() => Math.random() - 0.5);
@@ -29,77 +26,20 @@ function shuffle<T>(arr: T[]): T[] {
 
 const LABELS = ["A", "B", "C", "D", "E", "F"];
 
-// ─── Style inline (nie zależą od Tailwinda) ───────────────────────────────────
 
-const styles: Record<string, CSSProperties> = {
-  wrapper: {
-    display: "flex",
-    gap: "1.5rem",
-    padding: "1.5rem",
-    maxWidth: "860px",
-    margin: "0 auto",
-  },
-  sidebar: {
-    width: "140px",
-    flexShrink: 0,
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.75rem",
-  },
-  statCard: {
-    textAlign: "center",
-    padding: "1rem 0.75rem",
-  },
-  statLabel: {
-    fontSize: "11px",
-    textTransform: "uppercase",
-    letterSpacing: "0.06em",
-    marginBottom: "0.4rem",
-  },
-  statValue: {
-    fontSize: "2rem",
-    fontWeight: 500,
-    lineHeight: 1,
-  },
-  main: {
-    flex: 1,
-    minWidth: 0,
-  },
-  categoryBadge: {
-    display: "inline-block",
-    marginBottom: "0.75rem",
-    fontSize: "12px",
-  },
-  questionText: {
-    fontSize: "17px",
-    fontWeight: 500,
-    lineHeight: 1.6,
-    marginBottom: "1.25rem",
-  },
-  answerList: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.6rem",
-  },
-  markerBase: {
-    width: "28px",
-    height: "28px",
-    minWidth: "28px",
-    borderRadius: "50%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: "12px",
-    fontWeight: 500,
-    transition: "background 0.15s, border-color 0.15s, color 0.15s",
-  },
-  finishBox: {
-    textAlign: "center",
-    padding: "3rem 0",
-  },
+const markerBase: CSSProperties = {
+  width: "36px",
+  height: "36px",
+  minWidth: "36px",
+  borderRadius: "50%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontSize: "13px",
+  fontWeight: 600,
+  transition: "background 0.15s, border-color 0.15s, color 0.15s",
+  flexShrink: 0,
 };
-
-// ─── Kolor markera w zależności od stanu ──────────────────────────────────────
 
 function markerStyle(
   index: number,
@@ -107,38 +47,16 @@ function markerStyle(
   selected: number[],
   revealMap: RevealMap
 ): CSSProperties {
-  const base = styles.markerBase;
-  if (!answered) {
-    const sel = selected.includes(index);
-    return sel
-      ? { ...base, background: "#6c757d", border: "2px solid #6c757d", color: "#fff" }
-      : { ...base, background: "#f8f9fa", border: "2px solid #dee2e6", color: "#6c757d" };
-  }
-  const state = revealMap[index];
-  if (state === "correct") return { ...base, background: "#198754", border: "2px solid #198754", color: "#fff" };
-  if (state === "wrong")   return { ...base, background: "#dc3545", border: "2px solid #dc3545", color: "#fff" };
-  if (state === "missed")  return { ...base, background: "#20c997", border: "2px solid #20c997", color: "#fff" };
-  return { ...base, background: "#f8f9fa", border: "2px solid #dee2e6", color: "#6c757d" };
-}
-
-// Klasy Bootstrap dla przycisku odpowiedzi
-function answerBtnClass(
-  index: number,
-  answered: boolean,
-  selected: number[],
-  revealMap: RevealMap
-): string {
-  const base = "btn d-flex align-items-center gap-3 text-start w-100 border";
   if (!answered) {
     return selected.includes(index)
-      ? `${base} btn-secondary`
-      : `${base} btn-outline-secondary`;
+      ? { ...markerBase, background: "#0d6efd", border: "2px solid #0d6efd", color: "#fff" }
+      : { ...markerBase, background: "#f8f9fa", border: "2px solid #dee2e6", color: "#6c757d" };
   }
   const state = revealMap[index];
-  if (state === "correct") return `${base} btn-success`;
-  if (state === "wrong")   return `${base} btn-danger`;
-  if (state === "missed")  return `${base} btn-outline-success opacity-75`;
-  return `${base} btn-outline-secondary`;
+  if (state === "correct") return { ...markerBase, background: "#198754", border: "2px solid #198754", color: "#fff" };
+  if (state === "wrong")   return { ...markerBase, background: "#dc3545", border: "2px solid #dc3545", color: "#fff" };
+  if (state === "missed")  return { ...markerBase, background: "#20c997", border: "2px solid #20c997", color: "#fff" };
+  return { ...markerBase, background: "#f8f9fa", border: "2px solid #dee2e6", color: "#6c757d" };
 }
 
 function markerLabel(
@@ -147,17 +65,35 @@ function markerLabel(
   selected: number[],
   revealMap: RevealMap
 ): string {
-  if (!answered) return selected.includes(index) ? "●" : LABELS[index];
+  if (!answered) return selected.includes(index) ? "✓" : LABELS[index];
   const state = revealMap[index];
   if (state === "correct" || state === "missed") return "✓";
   if (state === "wrong") return "✗";
   return LABELS[index];
 }
 
-// ─── Komponent główny ─────────────────────────────────────────────────────────
+function answerBtnClass(
+  index: number,
+  answered: boolean,
+  selected: number[],
+  revealMap: RevealMap
+): string {
+  const base = "btn d-flex align-items-center gap-3 text-start w-100";
+  if (!answered) {
+    return selected.includes(index)
+      ? `${base} btn-primary`
+      : `${base} btn-outline-secondary`;
+  }
+  const state = revealMap[index];
+  if (state === "correct") return `${base} btn-success`;
+  if (state === "wrong")   return `${base} btn-danger`;
+  if (state === "missed")  return `${base} btn-outline-success`;
+  return `${base} btn-outline-secondary`;
+}
+
 
 export default function QuizApp() {
-  const [questions, setQuestions] = useState<Pytanie[]>([]);
+  const [questions, setQuestions] = useState<Question[]>([]);
   const [current, setCurrent]     = useState<number>(0);
   const [okCount, setOkCount]     = useState<number>(0);
   const [failCount, setFailCount] = useState<number>(0);
@@ -167,7 +103,7 @@ export default function QuizApp() {
   const [revealMap, setRevealMap] = useState<RevealMap>({});
   const [finished, setFinished]   = useState<boolean>(false);
 
-  const init = useCallback((data: Pytanie[]) => {
+  const init = useCallback((data: Question[]) => {
     setQuestions(shuffle(data));
     setCurrent(0);
     setOkCount(0);
@@ -180,18 +116,18 @@ export default function QuizApp() {
   }, []);
 
   useEffect(() => {
-    init(quizData as Pytanie[]);
+    init(quizData as Question[]);
   }, [init]);
 
   const q = questions[current];
-  const isMultiple = q?.pytanie?.toLowerCase().includes("wielokrotna") ?? false;
+  const isMultiple: boolean = q?.pytanie?.toLowerCase().includes("wielokrotna") ?? false;
   const correctIndices: number[] =
     q?.odpowiedzi.map((a, i) => (a.prawidlowa ? i : -1)).filter((i) => i !== -1) ?? [];
 
   function reveal(chosenSet: Set<number>, correct: boolean): void {
     const map: RevealMap = {};
     q.odpowiedzi.forEach((a, i) => {
-      if (a.prawidlowa && chosenSet.has(i))  map[i] = "correct";
+      if (a.prawidlowa && chosenSet.has(i))       map[i] = "correct";
       else if (!a.prawidlowa && chosenSet.has(i)) map[i] = "wrong";
       else if (a.prawidlowa && !chosenSet.has(i)) map[i] = "missed";
     });
@@ -209,15 +145,18 @@ export default function QuizApp() {
 
   function handleMultiToggle(i: number): void {
     if (answered) return;
-    setSelected((prev) => {
-      const next = prev.includes(i) ? prev.filter((x) => x !== i) : [...prev, i];
-      if (next.length === correctIndices.length) {
-        const chosenSet = new Set(next);
-        const allCorrect = correctIndices.every((j) => chosenSet.has(j));
-        setTimeout(() => reveal(chosenSet, allCorrect), 80);
-      }
-      return next;
-    });
+    setSelected((prev) =>
+      prev.includes(i) ? prev.filter((x) => x !== i) : [...prev, i]
+    );
+  }
+
+  function handleMultiSubmit(): void {
+    if (answered || selected.length === 0) return;
+    const chosenSet = new Set(selected);
+    const allCorrect =
+      correctIndices.length === selected.length &&
+      correctIndices.every((j) => chosenSet.has(j));
+    reveal(chosenSet, allCorrect);
   }
 
   function handleNext(): void {
@@ -248,105 +187,141 @@ export default function QuizApp() {
   }
 
   return (
-    <div style={styles.wrapper}>
-      {/* ── Sidebar z licznikami ── */}
-      <div style={styles.sidebar}>
-        <div className="card text-center" style={styles.statCard}>
-          <div className="text-muted" style={styles.statLabel}>✓ Poprawne</div>
-          <div className="text-success" style={styles.statValue}>{okCount}</div>
-        </div>
-        <div className="card text-center" style={styles.statCard}>
-          <div className="text-muted" style={styles.statLabel}>✗ Błędne</div>
-          <div className="text-danger" style={styles.statValue}>{failCount}</div>
-        </div>
-      </div>
+    <div className="container-sm py-3 px-3" style={{ maxWidth: "680px" }}>
 
-      {/* ── Główna zawartość ── */}
-      <div style={styles.main}>
-        {/* Pasek postępu */}
-        <div className="progress mb-3" style={{ height: "4px" }}>
-          <div
-            className="progress-bar"
-            role="progressbar"
-            style={{ width: `${progress}%`, transition: "width 0.5s ease" }}
-            aria-valuenow={progress}
-            aria-valuemin={0}
-            aria-valuemax={100}
-          />
-        </div>
-
-        {!finished ? (
-          <>
-            {/* Licznik pytań */}
-            <p className="text-muted small mb-3">
-              Pytanie {current + 1} z {questions.length}
-            </p>
-
-            {/* Kategoria */}
-            <span className="badge bg-primary-subtle text-primary mb-3" style={styles.categoryBadge}>
-              {q.kategoria}
-            </span>
-
-            {/* Treść pytania */}
-            <p style={styles.questionText}>{q.pytanie}</p>
-
-            {/* Odpowiedzi */}
-            <div style={styles.answerList}>
-              {q.odpowiedzi.map((ans, i) => (
-                <button
-                  key={i}
-                  className={answerBtnClass(i, answered, selected, revealMap)}
-                  disabled={answered && !isMultiple}
-                  onClick={() => (isMultiple ? handleMultiToggle(i) : handleSingle(i))}
-                >
-                  <span style={markerStyle(i, answered, selected, revealMap)}>
-                    {markerLabel(i, answered, selected, revealMap)}
-                  </span>
-                  {ans.tekst}
-                </button>
-              ))}
-            </div>
-
-            {/* Informacja zwrotna */}
-            {feedback && (
-              <div
-                className={`alert mt-3 py-2 ${feedback === "ok" ? "alert-success" : "alert-danger"}`}
-                role="alert"
-              >
-                {feedback === "ok" ? "✓ Poprawna odpowiedź!" : "✗ Błędna odpowiedź."}
-              </div>
-            )}
-
-            {/* Przycisk dalej */}
-            {answered && (
-              <button className="btn btn-outline-secondary mt-3" onClick={handleNext}>
-                {current + 1 < questions.length ? "Następne pytanie →" : "Zobacz wyniki"}
-              </button>
-            )}
-          </>
-        ) : (
-          /* Ekran końcowy */
-          <div style={styles.finishBox}>
-            <h2 className="mb-2">Koniec quizu!</h2>
-            <p className="text-muted mb-4">
-              Uzyskałeś {okCount} z {total} punktów ({pct}%).
-            </p>
-            <div className="progress mb-4" style={{ height: "8px" }}>
-              <div
-                className="progress-bar bg-success"
-                style={{ width: `${pct}%` }}
-                role="progressbar"
-                aria-valuenow={pct}
-                aria-valuemin={0}
-                aria-valuemax={100}
-              />
-            </div>
-            <button className="btn btn-outline-secondary" onClick={handleRestart}>
-              ↺ Zacznij od nowa
-            </button>
+      <div className="d-flex gap-2 mb-3">
+        <div className="card flex-fill text-center py-2 px-1">
+          <div className="text-muted" style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.06em" }}>
+            ✓ Poprawne
           </div>
-        )}
+          <div className="text-success fw-medium" style={{ fontSize: "1.75rem", lineHeight: 1.2 }}>
+            {okCount}
+          </div>
+        </div>
+        <div className="card flex-fill text-center py-2 px-1">
+          <div className="text-muted" style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.06em" }}>
+            ✗ Błędne
+          </div>
+          <div className="text-danger fw-medium" style={{ fontSize: "1.75rem", lineHeight: 1.2 }}>
+            {failCount}
+          </div>
+        </div>
+        <div className="card flex-fill text-center py-2 px-1">
+          <div className="text-muted" style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.06em" }}>
+            Postęp
+          </div>
+          <div className="text-secondary fw-medium" style={{ fontSize: "1.75rem", lineHeight: 1.2 }}>
+            {finished ? questions.length : current}/{questions.length}
+          </div>
+        </div>
       </div>
+
+      <div className="progress mb-4" style={{ height: "5px" }}>
+        <div
+          className="progress-bar"
+          role="progressbar"
+          style={{ width: `${progress}%`, transition: "width 0.5s ease" }}
+          aria-valuenow={progress}
+          aria-valuemin={0}
+          aria-valuemax={100}
+        />
+      </div>
+
+      {!finished ? (
+        <>
+          {/* Licznik pytań + kategoria */}
+          <div className="d-flex align-items-center justify-content-between mb-2">
+            <span className="text-muted small">Question {current + 1} z {questions.length} </span>
+            <span className="badge bg-primary-subtle text-primary">{q.kategoria}</span>
+          </div>
+
+          {/* Treść pytania */}
+          <p style={{ fontSize: "17px", fontWeight: 500, lineHeight: 1.6, marginBottom: "1rem" }}>
+            {q.pytanie}
+          </p>
+
+          {/* Podpowiedź dla wielokrotnej */}
+          {isMultiple && !answered && (
+            <p className="text-muted small mb-2">
+              Zaznacz wszystkie poprawne odpowiedzi, następnie kliknij „Zatwierdź".
+            </p>
+          )}
+
+          <div className="d-flex flex-column gap-2 mb-3">
+            {q.odpowiedzi.map((ans, i) => (
+              <button
+                key={i}
+                className={answerBtnClass(i, answered, selected, revealMap)}
+                style={{ minHeight: "52px", fontSize: "15px", padding: "10px 14px" }}
+                disabled={answered && !isMultiple}
+                onClick={() => isMultiple ? handleMultiToggle(i) : handleSingle(i)}
+                aria-pressed={selected.includes(i)}
+              >
+                <span style={markerStyle(i, answered, selected, revealMap)}>
+                  {markerLabel(i, answered, selected, revealMap)}
+                </span>
+                <span>{ans.tekst}</span>
+              </button>
+            ))}
+          </div>
+
+          {isMultiple && !answered && (
+            <button
+              className="btn btn-primary w-100 mb-2"
+              style={{ minHeight: "48px", fontSize: "15px" }}
+              disabled={selected.length === 0}
+              onClick={handleMultiSubmit}
+            >
+              Zatwierdź odpowiedź
+            </button>
+          )}
+
+          {feedback && (
+            <div
+              className={`alert py-2 mb-2 ${feedback === "ok" ? "alert-success" : "alert-danger"}`}
+              role="alert"
+            >
+              {feedback === "ok"
+                ? "✓ Poprawna odpowiedź!"
+                : `✗ Błędna odpowiedź. Poprawne: ${correctIndices.map((j) => q.odpowiedzi[j].tekst).join(", ")}.`}
+            </div>
+          )}
+
+          {answered && (
+            <button
+              className="btn btn-outline-secondary w-100"
+              style={{ minHeight: "48px", fontSize: "15px" }}
+              onClick={handleNext}
+            >
+              {current + 1 < questions.length ? "Następne Pytabie →" : "Zobacz wyniki"}
+            </button>
+          )}
+        </>
+      ) : (
+        <div className="text-center py-4">
+          <h2 className="mb-1">Koniec quizu!</h2>
+          <p className="text-muted mb-3">
+            Uzyskałeś {okCount} z {total} punktów ({pct}%).
+          </p>
+          <div className="progress mb-4" style={{ height: "10px" }}>
+            <div
+              className={`progress-bar ${pct >= 60 ? "bg-success" : "bg-danger"}`}
+              style={{ width: `${pct}%`, transition: "width 0.6s ease" }}
+              role="progressbar"
+              aria-valuenow={pct}
+              aria-valuemin={0}
+              aria-valuemax={100}
+            />
+          </div>
+          <button
+            className="btn btn-outline-secondary"
+            style={{ minHeight: "48px", fontSize: "15px", padding: "10px 28px" }}
+            onClick={handleRestart}
+          >
+            ↺ Zacznij od nowa
+          </button>
+        </div>
+      )}
     </div>
   );
 }

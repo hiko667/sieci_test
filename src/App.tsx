@@ -5,7 +5,11 @@ function App() {
 
   return (
     <>
-      <QuizApp></QuizApp>
+      <div className='d-flex align-items-center'>
+        
+          <QuizApp></QuizApp>
+        
+      </div>
     </>
   )
 }
